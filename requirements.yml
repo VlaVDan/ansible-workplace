@@ -1,0 +1,9 @@
+- name: k9s
+  src: andrewrothstein.k9s
+
+- name: minikube
+  src: gantsign.minikube
+
+- name: google-chrome
+  src: darkwizard242.googlechrome
+

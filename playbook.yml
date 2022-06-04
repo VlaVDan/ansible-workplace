@@ -1,0 +1,11 @@
+- hosts: localhost
+  connection: local
+  become: True
+  roles:
+    - role: packages
+    - role: google-chrome
+    - role: helm
+    - role: k9s
+    - role: kubectl
+    - role: minikube
+    - role: terraform
