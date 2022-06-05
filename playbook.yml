@@ -8,4 +8,9 @@
     - role: k9s
     - role: kubectl
     - role: minikube
+    - role: atom
     - role: terraform
+    - role: slack
+    - role: ms-teams
+    - role: mysql-workbench
+    - role: postman

@@ -1,0 +1,8 @@
+- name: Install prerequisites
+  apt:
+    pkg:
+      - snapd
+
+- name: Install mysql-workbench
+  command: snap install mysql-workbench-community
+

@@ -1,0 +1,8 @@
+- name: Install prerequisites
+  apt:
+    pkg:
+      - snapd
+
+- name: Install postman
+  command: snap install postman
+

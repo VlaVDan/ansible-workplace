@@ -7,3 +7,5 @@
 - name: google-chrome
   src: darkwizard242.googlechrome
 
+- name: ms-teams
+  src: ngetchell.ms_teams

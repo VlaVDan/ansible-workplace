@@ -7,6 +7,8 @@
       - mc
       - network-manager-l2tp-gnome
       - network-manager-strongswan
+      - traceroute
+      - jq
     state: latest
     update_cache: true
 

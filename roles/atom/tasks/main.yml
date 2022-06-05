@@ -1,0 +1,21 @@
+- name: Install prerequisites
+  apt:
+    pkg:
+      - apt-transport-https
+      - ca-certificates 
+      - curl
+
+- name: Add an Apt signing key
+  ansible.builtin.apt_key:
+    url: https://packagecloud.io/AtomEditor/atom/gpgkey
+    state: present
+
+- name: Add specified repository into sources list
+  ansible.builtin.apt_repository:
+    repo: deb https://packagecloud.io/AtomEditor/atom/any any main
+    state: present
+
+- name: Install atom
+  apt:
+    pkg: atom
+
