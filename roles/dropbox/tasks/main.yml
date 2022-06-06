@@ -19,6 +19,6 @@
 
 - name: Start Ubuntu dropbox package
   become: false
-  command: "~/.dropbox-dist/dropboxd &"
+  command: "~/.dropboxd >/dev/null 2>&1 &"
   args:
     chdir: ~
