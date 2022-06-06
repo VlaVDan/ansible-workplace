@@ -1,0 +1,24 @@
+- name: Download Ubuntu dropbox package
+  get_url:
+    url: https://www.dropbox.com/download?plat=lnx.x86_64
+    dest: /tmp/
+  register: pkg_file
+
+
+- name: Unpack Ubuntu dropbox package
+  become: false
+  ansible.builtin.unarchive:
+    src: "{{ pkg_file.dest }}"
+    dest: "~"
+
+- name: Download python script
+  become: false
+  get_url:
+    url: https://www.dropbox.com/download?dl=packages/dropbox.py
+    dest: "~"
+
+- name: Start Ubuntu dropbox package
+  become: false
+  command: "~/.dropbox-dist/dropboxd &"
+  args:
+    chdir: ~

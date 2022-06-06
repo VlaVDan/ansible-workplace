@@ -2,7 +2,7 @@
   apt:
     pkg:
       - apt-transport-https
-      - ca-certificates 
+      - ca-certificates
       - curl
 
 - name: Add an Apt signing key

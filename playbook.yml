@@ -14,3 +14,4 @@
     - role: ms-teams
     - role: mysql-workbench
     - role: postman
+    - role: dropbox
