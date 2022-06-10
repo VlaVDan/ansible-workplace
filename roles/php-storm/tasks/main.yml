@@ -1,0 +1,8 @@
+- name: Install prerequisites
+  apt:
+    pkg:
+      - snapd
+
+- name: Install php-storm
+  command: snap install phpstorm --classic
+
