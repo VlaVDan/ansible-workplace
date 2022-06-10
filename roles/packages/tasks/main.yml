@@ -9,6 +9,7 @@
       - network-manager-strongswan
       - traceroute
       - jq
+      - keepass2
     state: latest
     update_cache: true
 
@@ -18,8 +19,8 @@
     groups: "docker"
     append: True
 
-- name: Remove unnecessary snaps
-  community.general.snap:
-    name:
-      - firefox
-    state: absent
+#- name: Remove unnecessary snaps
+#  community.general.snap:
+#    name:
+#      - firefox
+#    state: absent
